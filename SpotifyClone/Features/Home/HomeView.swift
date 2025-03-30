@@ -55,11 +55,6 @@ struct HomeView: View {
                 Spacer()
             }
             
-//            BottomPlayer(
-//                onClick: {
-//                router.navigate(to: .playerView)
-//            }).padding(.horizontal,10)
-//                .padding(.vertical,88)
     
         .padding(EdgeInsets(top: spacing.extraMedium, leading: spacing.none, bottom: spacing.none,trailing: spacing.none))
         .background{

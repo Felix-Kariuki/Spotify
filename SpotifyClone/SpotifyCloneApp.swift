@@ -19,7 +19,7 @@ struct SpotifyCloneApp:App {
                 MainView().navigationDestination(for: NavigationRouter.SpotifyDestination.self){ destination in
                     switch destination {
                     case.playerview:
-                        ContentView()
+                        PlayerMainView()
                             .environmentObject(navigationRouter)
                             .navigationBarBackButtonHidden(true)
                         

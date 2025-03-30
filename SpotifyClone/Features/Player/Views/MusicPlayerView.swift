@@ -225,7 +225,7 @@ private extension MusicPlayerView{
                 .cornerRadius(18)
             
             HStack{
-                Image(viewModel.currentSong.albumImage)
+                Image(viewModel.currentSong.image)
                     .resizable()
                     .cornerRadius(10)
                     .frame(width: 50,height: 50)
@@ -339,5 +339,5 @@ private extension MusicPlayerView{
 }
 
 #Preview {
-    ContentView()
+    PlayerMainView()
 }

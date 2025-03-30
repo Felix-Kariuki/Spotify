@@ -14,7 +14,7 @@ struct BottomPlayer: View {
     var body: some View {
         VStack{
             HStack(spacing:spacing.bigSmall){
-                Image(song.albumImage)
+                Image(song.image)
                     .resizable()
                     .frame(width: 40,height: 40)
                     .cornerRadius(6)

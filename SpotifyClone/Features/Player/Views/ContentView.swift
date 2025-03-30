@@ -8,7 +8,7 @@
 import SwiftUI
 import TimberIOS
 
-struct ContentView: View {
+struct PlayerMainView: View {
     
     @EnvironmentObject var navigationRouter: NavigationRouter
     
@@ -25,5 +25,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    PlayerMainView()
 }
