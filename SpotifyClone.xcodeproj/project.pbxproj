@@ -62,6 +62,11 @@
 			path = SpotifyCloneUITests;
 			sourceTree = "<group>";
 		};
+		DCB500ED2D994946003FD88C /* screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,7 @@
 				DC3E9AE92D70C903002B61D0 /* SpotifyCloneTests */,
 				DC3E9AF32D70C903002B61D0 /* SpotifyCloneUITests */,
 				DC3E9AD72D70C902002B61D0 /* Products */,
+				DCB500ED2D994946003FD88C /* screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +133,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DC3E9AD82D70C902002B61D0 /* SpotifyClone */,
+				DCB500ED2D994946003FD88C /* screenshots */,
 			);
 			name = SpotifyClone;
 			packageProductDependencies = (
