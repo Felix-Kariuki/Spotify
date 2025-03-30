@@ -7,11 +7,41 @@
 
 import SwiftUI
 
+
 @main
-struct SpotifyCloneApp: App {
+struct SpotifyCloneApp:App {
+    
+    @StateObject private var navigationRouter = NavigationRouter()
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup{
+            NavigationStack(path: $navigationRouter.path, root: {
+                MainView().navigationDestination(for: NavigationRouter.SpotifyDestination.self){ destination in
+                    switch destination {
+                    case.playerview:
+                        ContentView()
+                            .environmentObject(navigationRouter)
+                            .navigationBarBackButtonHidden(true)
+                        
+                    case .mainView: MainView()
+                            .environmentObject(navigationRouter)
+                        
+    
+                    }
+                }
+                .environmentObject(navigationRouter)
+            })
         }
+    }
+}
+
+extension UINavigationController: @retroactive UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
     }
 }

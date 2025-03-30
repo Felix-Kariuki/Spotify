@@ -6,17 +6,22 @@
 //
 
 import SwiftUI
+import TimberIOS
 
 struct ContentView: View {
+    
+    @EnvironmentObject var navigationRouter: NavigationRouter
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        GeometryReader { g in
+            let safeArea = g.safeAreaInsets
+            let size = g.size
+            MusicPlayerView(
+                size: size, safeArea:safeArea)
         }
-        .padding()
     }
+    
+
 }
 
 #Preview {

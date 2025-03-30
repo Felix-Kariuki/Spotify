@@ -1,0 +1,15 @@
+{
+  "originHash" : "5b613e04f3922e54c075a683c7b2c0b6d9376df23908d87a93dffbd11cb88371",
+  "pins" : [
+    {
+      "identity" : "timberios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Felix-Kariuki/TimberIOS",
+      "state" : {
+        "revision" : "2cff31e18831facbf1ba954bb5c5001504611ec6",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}
